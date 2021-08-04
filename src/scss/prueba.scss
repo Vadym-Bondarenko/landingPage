@@ -1,0 +1,38 @@
+$light-theme: true;
+$dark-theme:false;
+
+
+header {
+    @if $light-theme == true {
+        background-color: white;
+        color: black;
+    } @else if $dark-theme {
+        background-color: black;
+        color: white;
+    } @else {
+        background-color: red;
+        color: #000;
+    }
+}
+
+$num:1;
+
+$color-list: #0f0, #00f, orange, #ccc;
+@while $num < 5 {
+    td:nth-child(#{$num}){
+        color: red;
+        background-color: nth($color-list, $num);
+        $num:$num+1;
+    }
+}
+
+@for $var from $start to $end {
+
+}
+
+$num:1;
+$color-list: #0f0, #00f, orange, #ccc;
+
+@for $i from 1 to 5 {
+    p:nth-of-type
+}

@@ -1,0 +1,23 @@
+
+$light:#fff;
+$primary:#E9D500;
+$secondary:#9b9b9b;
+$success:#62d336;
+$danger:#ec3022;
+$warning:#f7e708;
+$dark: #272E35;
+
+
+.text-white {
+    color: $light
+}
+
+.text-gray {
+    color: $secondary!important;
+}
+
+.text-muted { color: #9b9b9b!important; }
+
+.dark {
+    background: $dark;
+}

@@ -1,0 +1,218 @@
+
+header{
+    width: $w-10;
+    background-color: $white;
+    -webkit-box-shadow: $box-shadow;
+            box-shadow: $box-shadow;
+}
+
+.overflow-h {
+    overflow: hidden;
+}
+
+.header-center {
+    width: $w-10;
+    margin: 0 auto;
+
+
+    padding-top: $m-1;
+    padding-bottom: $m-1;
+    
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.header-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.header-nav {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+.header-nav a {
+   color: $gray-900;
+   text-decoration: none;
+}
+
+.header-logo {
+   height: 45px;
+}
+
+
+.header-top-line {
+    width: $w-10;
+    color: $white;
+    background-color: $secondary;
+    font-size: $h6-font-size+rem;
+    cursor: pointer; 
+    letter-spacing: .115rem; 
+    font-weight: 700;
+    line-height: 1.5;
+    padding-top: 1rem;
+}
+
+.header-top-line-white {
+    background-color: $white !important;
+    
+}
+
+
+.header-top-line span {
+    padding-bottom: 1rem;
+}
+
+
+
+header {
+    z-index: $z-index;
+    position: fixed;
+}
+
+@media (max-width: 855px) {
+    
+    .header-wrapper {
+        display: none;
+
+    }
+
+    .header-wrapper.active {
+      
+        border-top: 1px solid $gray-400;
+        width: 100%;
+        height: calc(100vh-125px);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 125px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding:$glutter;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+                justify-content: space-between;
+        z-index: $z-index;
+        background-color: $white;
+    }
+
+
+
+    .header-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+                flex-direction: column;
+        width: $w-10;
+        margin-top: $margin-4;
+
+    }
+
+    
+
+    .header-nav a {
+        margin-top: $margin-2;
+        margin-bottom: $margin-2;
+        font-size: $h2-font-size;
+        font-weight: 700;    
+    }
+   
+   
+
+    .menu-bars {
+        display:inline;
+        cursor: pointer;
+    
+    }
+
+
+    
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 30px;
+      height: 3px;
+      background-color: $gray-900;
+      margin: 8px 0;
+      -webkit-transition: $transition;
+      -o-transition: $transition;
+      transition: $transition;
+        }
+    
+    /* Rotate first bar */
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-7px, 8px);      -ms-transform: rotate(-45deg) translate(-7px, 8px);      transform: rotate(-45deg) translate(-7px, 8px);    }
+    
+    /* Fade out the second bar */
+    .change .bar2 {
+      opacity: 0;
+    }
+    
+    /* Rotate last bar */
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-6px, -8px);      -ms-transform: rotate(45deg) translate(-6px, -8px);      transform: rotate(45deg) translate(-6px, -8px);    }
+
+}
+
+
+
+// /* Media Query: Large Smartphone (Vertical) */
+@media (min-width: 769px) {
+    
+
+    .header-link {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+
+    letter-spacing: .125rem;
+    font-weight: 700;
+    font-size: $h6-font-size+rem;
+    line-height: 1.5;
+    }
+
+    
+    .header-top-line .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+                justify-content: space-between;
+    
+      
+    }
+  
+}
+
+  
+// }
+
+ 

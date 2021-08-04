@@ -1,0 +1,50 @@
+.btn {
+    display: inline-block;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: $h6-font-size+rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+    border: none;
+    min-width: 124px;
+    height: 56px;
+    padding: 0 24px;
+    vertical-align: middle;
+    &:hover {
+        color: $primary;
+        background-color: $gray-900;
+    }
+    &:focus {
+        outline: 0;
+        box-shadow: $box-shadow;
+    }
+    &:active {
+        outline: 0;
+        box-shadow: $box-shadow;
+        color: $primary;
+        background-color: $gray-900;
+    }
+}
+
+.btn-full {
+    width: 100% !important;
+}
+
+.btn-primary {
+    background-color: $primary;
+    color: $gray-900;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+    line-height: 1.5;
+}

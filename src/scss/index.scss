@@ -1,0 +1,147 @@
+@import "colors.scss";
+@import "sizing.scss";
+@import "buttons.scss";
+@import "display.scss";
+@import "flex.scss";
+@import "text.scss";
+@import "utilities.scss";
+@import "position.scss";
+@import "card.scss";
+@import "section.scss";
+@import "_layout.scss";
+@import "animation.scss";
+@import "footer.scss";
+@import "parallax.scss";
+@import "header.scss";
+$border-box: border-box;
+$text-decoration-none: none;
+$m-auto: auto;
+.imgOur {
+    width: 100%;
+}
+
+.container {
+    width: $w-9;
+    margin: $m-auto;
+    max-width: 1200px;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: $zero;
+    padding: $zero;
+    border: $zero;
+    vertical-align: baseline;
+}
+
+* {
+    -webkit-box-sizing: $border-box;
+    box-sizing: $border-box;
+    scroll-behavior: smooth;
+}
+
+div,
+input,
+textarea,
+select,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+a:focus {
+    outline: $text-decoration-none !important;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}

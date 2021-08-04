@@ -1,0 +1,30 @@
+
+
+.text-center {
+    text-align: center;
+}
+ 
+.text-right {
+    text-align: right;
+}
+
+.text-dec-none {
+    text-decoration: none!important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.line {
+    width: $w-10;
+    border-top: 1px solid $gray-400;
+}
